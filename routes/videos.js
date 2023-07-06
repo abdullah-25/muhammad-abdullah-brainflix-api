@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("node:fs");
 const { v4 } = require("uuid");
+//const thumbnail = require("../public/images/Upload-video-preview.jpg");
 
 const FILE = "./data/videos.json";
 
@@ -38,8 +39,8 @@ function post(req, res) {
   const newVideo = {
     id: v4(),
     title,
-    channel: "",
-    image: "",
+    channel: "Abdullah Imran",
+    image: "http://localhost:8080/images/Upload-video-preview.jpg",
     description,
     views: "1,001,023",
     likes: "110,985",

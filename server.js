@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 5050;
 // middleware
 app.use(express.json());
 app.use(cors({ origin: process.env.CORS_ORIGIN }));
+app.use(express.static("public"));
 
 // register routes
 app.use("/videos", videos);
