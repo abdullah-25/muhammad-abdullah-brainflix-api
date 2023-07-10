@@ -31,11 +31,8 @@ function getID(req, res) {
 
 function post(req, res) {
   const videos = readVideos();
-
-  console.log(req.body);
-
+  //console.log(req.body);
   const { title, description } = req.body;
-
   const newVideo = {
     id: v4(),
     title,
